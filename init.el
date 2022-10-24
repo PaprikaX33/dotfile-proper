@@ -1,4 +1,6 @@
-(add-to-list 'load-path "load-script")
+;; First init file -*- lexical-binding: t; -*-
+;;;(add-to-list 'load-path "load-script")
+(add-to-list 'load-path (concat user-emacs-directory "load-script"))
 (require 'bootstrap-x33)
 (require 'configuration-x33)
 (require 'buildins-x33)

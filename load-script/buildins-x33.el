@@ -38,8 +38,8 @@
 ;; ido mode
 (use-package ido
   :ensure nil
-  :bind
-  ("C-x C-f" ido-find-file)
+;;;  :bind
+;;; ("C-x C-f" ido-find-file)
   :config
   (setq ido-auto-merge-work-directories-length -1)
   (setq ido-default-buffer-method 'selected-window)

@@ -11,6 +11,10 @@
 ;; Prevent accidental exits
 (setq confirm-kill-emacs 'y-or-n-p)
 
+;; Custom custom-file
+(setq custom-file (concat user-emacs-directory "custom-var.el"))
+(load custom-file 'noerror)
+
 ;; Final provide
 (provide 'configuration-x33)
 ;; configuration-x33.el ends here

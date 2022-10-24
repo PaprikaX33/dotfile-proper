@@ -2,8 +2,19 @@
 (use-package gruber-darker-theme
 	     :ensure t
 	     :config
-	     (load-theme 'gruber-darker t)
-	     )
+	     (load-theme 'gruber-darker t))
+
+;; Multiple Cursors
+(use-package multiple-cursors
+	     :ensure t
+	     :bind
+	     ("C-S-c C-S-c" . mc/edit-lines)
+	     ("C->" . mc/mark-next-like-this)
+	     ("C-<" . mc/unmark-next-like-this)
+	     ("M-C-<" . mc/mark-previous-like-this)
+	     ("M-C->" . mc/unmark-previous-like-this)
+	     ("C-c C-<" . mc/mark-all-like-this)
+	     ("C-c C->" . mc/mark-all-like-this))
 
 ;; Whitespace Cleanup
 (use-package whitespace-cleanup-mode

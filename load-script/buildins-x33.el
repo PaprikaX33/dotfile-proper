@@ -43,14 +43,15 @@
   :config
   (setq ido-auto-merge-work-directories-length -1)
   (setq ido-default-buffer-method 'selected-window)
-  )
+  (ido-mode 1))
 
 ;; Org-mode
 (use-package org
   :ensure nil
+  :after flyspell-correct-popup
   :config
   (setq org-src-fontify-natively t)
-  (flyspell-mode t))
+  (add-hook 'org-mode-hook (lambda () (flyspell-mode t))))
 
 ;; ibuffer
 (use-package ibuffer

@@ -19,7 +19,10 @@
   ("C-c C->" . mc/mark-all-like-this))
 
 ;; Magit
-(use-package magit)
+(use-package magit
+  :ensure t
+  :bind
+  ("<f2> m" . 'magit-status))
 
 ;; Whitespace Cleanup
 (use-package whitespace-cleanup-mode

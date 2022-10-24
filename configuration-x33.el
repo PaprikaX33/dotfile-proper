@@ -4,9 +4,8 @@
 ;; Backup file cleaner
 (setq backup-directory-alist `(("." . "/tmp/emacs_save")))
 
-;; Line number
-(when (version<= "26.0.50" emacs-version )
-  (global-display-line-numbers-mode))
+;; auto revert
+(global-auto-revert-mode 1)
 
 ;; Prevent accidental exits
 (setq confirm-kill-emacs 'y-or-n-p)

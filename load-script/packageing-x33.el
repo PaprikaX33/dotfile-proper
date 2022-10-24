@@ -1,3 +1,4 @@
+;; File configuring all of the package from melpa and elpa -*- lexical-binding: t; -*-
 ;; Theme
 (use-package gruber-darker-theme
 	     :ensure t
@@ -33,6 +34,7 @@
 
 (use-package flyspell-correct-popup
 	     :after flyspell-correct)
+
 
 ;; Final provide
 (provide 'packageing-x33)

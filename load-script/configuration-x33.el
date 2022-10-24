@@ -1,3 +1,4 @@
+;; File configuring non package based configuration -*- lexical-binding: t; -*-
 ;; Encoding
 (setq-default buffer-file-coding-system 'utf-8-unix)
 

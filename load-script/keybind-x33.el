@@ -1,3 +1,4 @@
+;; File configuring non package based keybind -*- lexical-binding: t; -*-
 ;; Line truncating
 (global-set-key (kbd "<f2> t") 'toggle-truncate-lines)
 

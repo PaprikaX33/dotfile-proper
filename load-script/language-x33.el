@@ -1,3 +1,4 @@
+;; File configuring the language based package -*- lexical-binding: t; -*-
 (use-package web-mode
   :ensure t
   :mode (("\\.php$" .  web-mode)

@@ -1,3 +1,4 @@
+;; File Bootstraping the melpa, and use-package -*- lexical-binding: t; -*-
 ;; initialize the melpa, and use-package
 (require 'package)
 (add-to-list 'package-archives '("gnu"   . "https://elpa.gnu.org/packages/"))

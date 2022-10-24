@@ -24,3 +24,4 @@
 
 ;; Final provide
 (provide 'bootstrap-x33)
+;; bootstrap-x33.el ends here

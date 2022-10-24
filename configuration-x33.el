@@ -12,3 +12,4 @@
 
 ;; Final provide
 (provide 'configuration-x33)
+;; configuration-x33.el ends here

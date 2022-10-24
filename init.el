@@ -1,3 +1,4 @@
+(add-to-list 'load-path "load-script")
 (require 'bootstrap-x33)
 (require 'configuration-x33)
 (require 'buildins-x33)

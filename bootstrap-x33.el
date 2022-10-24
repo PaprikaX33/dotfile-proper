@@ -11,8 +11,6 @@
   (setq use-package-always-ensure t
         use-package-expand-minimally t))
 
-(provide 'bootstrap-x33)
-
 ;; Startup inhibitor
 (setq inhibit-startup-screen t)
 (menu-bar-mode 0)
@@ -23,3 +21,6 @@
 
 
 ;; Font
+
+;; Final provide
+(provide 'bootstrap-x33)

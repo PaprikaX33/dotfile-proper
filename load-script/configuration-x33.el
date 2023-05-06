@@ -13,7 +13,7 @@
 
 ;; Custom custom-file
 ;;; (setq custom-file (concat user-emacs-directory "custom-var.el"))
-(setq custom-file (expand-file-name "load-script" (file-name-directory load-file-name)))
+(setq custom-file (expand-file-name "custom-var.el" (file-name-directory (file-name-directory load-file-name))))
 (load custom-file 'noerror)
 
 ;; Final provide

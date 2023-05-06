@@ -12,7 +12,8 @@
 (setq confirm-kill-emacs 'y-or-n-p)
 
 ;; Custom custom-file
-(setq custom-file (concat user-emacs-directory "custom-var.el"))
+;;; (setq custom-file (concat user-emacs-directory "custom-var.el"))
+(setq custom-file (expand-file-name "load-script" (file-name-directory load-file-name)))
 (load custom-file 'noerror)
 
 ;; Final provide

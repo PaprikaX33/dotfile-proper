@@ -4,6 +4,11 @@
   :mode (("\\.php$" .  web-mode)
          ("\\.html$" .  web-mode)))
 
+;; Dockerfile
+(use-package dockerfile-mode
+  :ensure t
+  :defer)
+
 ;; Ein for python jupyter notebook
 (use-package ein
   :ensure t

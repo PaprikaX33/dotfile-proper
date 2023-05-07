@@ -1,6 +1,7 @@
 *~
 *.elc
 custom-var.el
+ido.last
 elpa/*
 auto-save-list/*
 transient/*

@@ -9,6 +9,12 @@
   :ensure t
   :defer)
 
+;; Zig Mode
+(use-package zig-mode
+  :ensure t
+  :defer
+  :mode ("\\.zig$" .  zig-mode))
+
 ;; Ein for python jupyter notebook
 (use-package ein
   :ensure t

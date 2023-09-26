@@ -25,6 +25,17 @@
   ;;; (setq ein:use-auto-complete t)
   )
 
+;; Rust mode
+(use-package rust-mode
+  :ensure t
+  :defer t
+  :mode ("\\.rs$" .  rust-mode)
+  :config
+  (setq rust-format-on-save t)
+  :bind
+  (:map rust-mode-map
+	("C-S-<iso-lefttab>" . rust-compile)))
+
 ;; Final provide
 (provide 'language-x33)
 ;; language-x33.el ends here

@@ -32,9 +32,14 @@
   :mode ("\\.rs$" .  rust-mode)
   :config
   (setq rust-format-on-save t)
+  :hook
+  (rust-mode . prettify-symbols-mode)
   :bind
   (:map rust-mode-map
-	("C-S-<iso-lefttab>" . rust-compile)))
+	("C-`" . rust-test)
+	("C-S-<iso-lefttab>" . rust-check)
+	("C-M-<tab>" . rust-run)
+	("C-M-S-<iso-lefttab>" . rust-run-clippy)))
 
 ;; Final provide
 (provide 'language-x33)

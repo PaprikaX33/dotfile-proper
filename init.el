@@ -4,7 +4,7 @@
 ;; Load machine specific file
 ;; It should be the first after the bootstrap
 ;; Since it could be used to alter the other package loaded
- (when (file-exists-p "~/machine-specific-x33.el")
+ (when (file-exists-p "./load-script/machine-specific-x33.el")
    (require 'machine-specific-x33))
 (require 'configuration-x33)
 (require 'buildins-x33)
